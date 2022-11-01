@@ -1,5 +1,6 @@
 # AppListaDeComprasJava
 Aplicativo Android CRUD Completo lista de compras. Este aplicativo contém leitor de código de barras, QR Code, geolocalização.
+Este aplicativo desenvolvido duranto o treinamento do professor Marco Maddo.
 
 ![menu_lista_de_compras](https://user-images.githubusercontent.com/47039818/199251657-8d5bed56-cde5-49f3-a757-dd574eaec658.png)
 
