@@ -14,7 +14,7 @@ public class Produto extends RealmObject {
     private int id;
 
     @Required
-    private Date dataDaInclusao;
+    private Date DataDaInclusao;
 
     @Required
     private String nomeDoProduto;
@@ -22,14 +22,13 @@ public class Produto extends RealmObject {
     @Required
     private String unidadeDeMedida;
 
-
-    private double quantidade;
+    private double Quantidade;
 
     private double precoPago;
 
     private String codigoDeBarras;
 
-    private  byte[] imagem;
+    private byte[] imagem;
 
     @Ignore
     private List<Produto> produtos;
@@ -44,11 +43,11 @@ public class Produto extends RealmObject {
     }
 
     public Date getDataDaInclusao() {
-        return dataDaInclusao;
+        return DataDaInclusao;
     }
 
     public void setDataDaInclusao(Date dataDaInclusao) {
-        this.dataDaInclusao = dataDaInclusao;
+        DataDaInclusao = dataDaInclusao;
     }
 
     public String getNomeDoProduto() {
@@ -68,11 +67,11 @@ public class Produto extends RealmObject {
     }
 
     public double getQuantidade() {
-        return quantidade;
+        return Quantidade;
     }
 
     public void setQuantidade(double quantidade) {
-        this.quantidade = quantidade;
+        Quantidade = quantidade;
     }
 
     public double getPrecoPago() {
