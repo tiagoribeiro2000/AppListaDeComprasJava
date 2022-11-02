@@ -1,10 +1,12 @@
 package app.br.com.listadecompras.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import app.br.com.listadecompras.model.Categoria;
 import io.realm.Realm;
 import io.realm.RealmResults;
+import io.realm.exceptions.RealmException;
 
 public class CategoriaController implements ICrud<Categoria>{
 
@@ -84,7 +86,22 @@ public class CategoriaController implements ICrud<Categoria>{
 
     @Override
     public List<Categoria> listar(Categoria obj) {
-        
-        return null;
+
+        Realm realm = null;
+        RealmResults<Categoria> results = null;
+
+        List<Categoria> list = new ArrayList<>();
+
+        try {
+            realm = Realm.getDefaultInstance();
+            results = realm.where(Categoria.class).findAll();
+            list = realm.copyFromRealm(results);
+        }catch (RealmException e){
+
+        }finally {
+            realm.close();
+        }
+
+        return list;
     }
 }
