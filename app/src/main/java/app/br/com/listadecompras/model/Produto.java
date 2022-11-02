@@ -28,7 +28,7 @@ public class Produto extends RealmObject {
 
     private String codigoDeBarras;
 
-    private byte[] imagem;
+    private byte[] imagemProduto;
 
     @Ignore
     private List<Produto> produtos;
@@ -91,11 +91,11 @@ public class Produto extends RealmObject {
     }
 
     public byte[] getImagem() {
-        return imagem;
+        return imagemProduto;
     }
 
     public void setImagem(byte[] imagem) {
-        this.imagem = imagem;
+        this.imagemProduto = imagem;
     }
 
     public List<Produto> getProdutos() {
