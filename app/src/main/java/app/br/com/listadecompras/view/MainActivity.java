@@ -20,6 +20,8 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import app.br.com.listadecompras.R;
+import app.br.com.listadecompras.controller.CategoriaController;
+import app.br.com.listadecompras.model.Categoria;
 
 
 public class MainActivity extends AppCompatActivity
@@ -68,7 +70,22 @@ public class MainActivity extends AppCompatActivity
 
         fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloVermelhoFragment()).commit();
 
+        manterCategoria();
     }
+
+    private void manterCategoria() {
+        CategoriaController controller =
+                new CategoriaController();
+        Categoria obj = new Categoria();
+
+        obj.setNomeDaCategoria("Registro alterado");
+        obj.setId(1);
+        controller.update(obj);
+
+
+
+    }
+
 
     @Override
     public void onBackPressed() {

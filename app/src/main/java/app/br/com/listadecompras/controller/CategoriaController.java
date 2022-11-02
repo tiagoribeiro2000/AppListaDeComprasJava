@@ -67,7 +67,7 @@ public class CategoriaController implements ICrud<Categoria>{
     }
 
     @Override
-    public void deleteByID(Categoria id) {
+    public void deleteByID(int id) {
 
         Realm realm = Realm.getDefaultInstance();
 
@@ -75,7 +75,7 @@ public class CategoriaController implements ICrud<Categoria>{
 
         RealmResults<Categoria> results =
                 realm.where(Categoria.class).equalTo("id",
-                       id.getId()).findAll();
+                       id).findAll();
         results.deleteAllFromRealm();
 
         realm.commitTransaction();
@@ -85,7 +85,7 @@ public class CategoriaController implements ICrud<Categoria>{
     }
 
     @Override
-    public List<Categoria> listar(Categoria obj) {
+    public List<Categoria> listar() {
 
         Realm realm = null;
         RealmResults<Categoria> results = null;
