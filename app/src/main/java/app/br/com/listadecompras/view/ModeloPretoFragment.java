@@ -1,4 +1,4 @@
-package app.br.com.listadecompras;
+package app.br.com.listadecompras.view;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -9,14 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import app.br.com.listadecompras.R;
 
 
-
-public class ModeloVermelhoFragment extends Fragment {
+public class ModeloPretoFragment extends Fragment {
 
     View view;
 
-    public ModeloVermelhoFragment() {
+    public ModeloPretoFragment() {
     }
 
 
@@ -30,7 +30,7 @@ public class ModeloVermelhoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view =  inflater.inflate(R.layout.fragment_vermelho, container, false);
+        view =  inflater.inflate(R.layout.fragment_preto, container, false);
 
         TextView txtTitulo = view.findViewById(R.id.txtTitulo);
 

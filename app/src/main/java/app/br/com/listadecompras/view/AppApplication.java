@@ -1,4 +1,4 @@
-package app.br.com.listadecompras;
+package app.br.com.listadecompras.view;
 
 import android.app.Application;
 import android.util.Log;
