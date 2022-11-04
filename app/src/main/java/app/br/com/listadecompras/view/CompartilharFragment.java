@@ -12,11 +12,11 @@ import android.widget.TextView;
 import app.br.com.listadecompras.R;
 
 
-public class ModeloAzulFragment extends Fragment {
+public class CompartilharFragment extends Fragment {
 
     View view;
 
-    public ModeloAzulFragment() {
+    public CompartilharFragment() {
     }
 
 

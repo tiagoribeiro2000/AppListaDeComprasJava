@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity
 
         fragmentManager = getSupportFragmentManager();
 
-        fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloVermelhoFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_fragment, new MinhasComprasFragment()).commit();
 
         manterCategoria();
         manterProduto();
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity
 
             navigationView.setItemTextColor(ColorStateList.valueOf(Color.BLACK));
 
-            fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloPretoFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_fragment, new MeusProdutosFragment()).commit();
 
         } else if (id == R.id.nav_minhas_compras) {
 
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity
             // TODO: Mudar a cor de todos os itens do menu programaticamente
             navigationView.setItemTextColor(ColorStateList.valueOf(Color.BLACK));
 
-            fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloVermelhoFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_fragment, new MinhasComprasFragment()).commit();
 
         } else if (id == R.id.nav_compartilhar) {
 
@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity
 
             navigationView.setItemTextColor(ColorStateList.valueOf(Color.BLACK));
 
-            fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloAzulFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_fragment, new CompartilharFragment()).commit();
 
         }
 

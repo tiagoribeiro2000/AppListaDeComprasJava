@@ -12,11 +12,11 @@ import android.widget.TextView;
 import app.br.com.listadecompras.R;
 
 
-public class ModeloPretoFragment extends Fragment {
+public class MeusProdutosFragment extends Fragment {
 
     View view;
 
-    public ModeloPretoFragment() {
+    public MeusProdutosFragment() {
     }
 
 
