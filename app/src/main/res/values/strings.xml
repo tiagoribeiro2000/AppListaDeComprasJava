@@ -7,4 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Sair</string>
     <string name="modelo_fragment">Fragmento Modelo</string>
+
+    <string name="txt_meus_produtos">Meus Produtos</string>
+    <string name="txt_minhas_compras">Minhas Compras</string>
+    <string name="txt_compartilhar">Compartilhar</string>
+    <string name="txt_sair_do_app">Sair do App</string>
 </resources>
